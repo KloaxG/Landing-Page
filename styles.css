@@ -14,14 +14,15 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-    
+
+
 
 }
 
 .logo {
     color: #29c3e5;
-    text-shadow: 1px 1px 1px  black, 0 0 0.2em #29c3e5;
+    /* text-shadow: 1px 0px 1px black, 0 0 0.2em #29c3e5;
+ */
 }
 
 .menu a {
@@ -31,8 +32,9 @@ header {
     font-weight: bold;
 
 }
+
 .menu a:hover {
-    transition: 0.3s;
+    transition: 0.8s;
 }
 
 .mostrar-menu,
@@ -51,7 +53,7 @@ header {
 .mostrar-menu,
 .esconder-menu {
     color: #29c3e5;
-    
+
 }
 
 #check {
@@ -59,16 +61,23 @@ header {
 }
 
 /* MAIN */
-.contenido{
+.contenido {
+
+    padding: 0px 0px 50px 0px;
     display: grid;
     grid-template-columns: repeat(1, 100%);
     justify-content: center;
     gap: 30px;
 }
-.contenido h1, p, a, img {
+
+.contenido h1,
+p,
+a,
+img {
     margin: 0 auto;
 }
-a button{
+
+a button {
     cursor: pointer;
     padding: 10px 20px;
     letter-spacing: 4px;
@@ -79,36 +88,144 @@ a button{
     border-radius: 4px;
     font-size: 15px;
 }
-.contenido a button:hover{
+
+.contenido a button:hover {
     color: #424955;
     transition: 0.3s;
 }
 
 /* SECTION */
-#empleados{
+#empleados {
     margin: 50px 0px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     padding: 0px 50px;
-    
+
 }
-.profiles{
+
+.profiles {
     display: grid;
     gap: 20px;
     text-align: center;
     align-items: center;
 }
-.profiles img{
-    width: 200px;
-    border-radius:100%;
+.profiles:hover{
+    padding: 50px;
+    background: #f0f0f0;
+    transition: 1s;
+    
 }
-.profiles a button:hover{
+
+.profiles img {
+    width: 150px;
+    border-radius: 100%;
+}
+
+.profiles a button:hover {
     color: #424955;
     transition: 0.3s;
 }
 
+/* ICONOS */
+#iconos {
+    padding: 0px 50px 50px 50px;
 
+}
+
+.iconos-lista {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.iconos-lista div {
+    flex: 1;
+    margin: 20px 0px;
+    border-right: 2px solid #424955;
+}
+
+#mobile {
+    border: none;
+}
+
+.iconos-lista div,
+i,
+h6 {
+    padding: 10px 0px;
+
+}
+
+.iconos-lista div i {
+    font-size: 50px;
+    color: #424955
+}
+
+.iconos-lista div h6 {
+    font-size: 20px;
+    font-weight: 50px;
+    margin: 10px 0px;
+}
+
+.iconos-lista div p {
+    font-size: 15px;
+}
+
+button.iconos {
+    cursor: pointer;
+    padding: 10px 20px;
+    letter-spacing: 4px;
+    background: #29c3e5;
+    color: white;
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.iconos:hover {
+    color: #424955;
+    transition: 0.3s;
+}
+
+.icon-align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 50px;
+}
+
+/* FOOTER */
+.footer {
+    padding: 100px 50px 50px 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color:#f0f0f0 ;
+}
+
+.left-footer img {
+    width: 50px;
+}
+
+
+.mid-footer {
+    position: initial;
+    display: grid;
+    grid-template-rows: repeat(1, 3fr);
+    justify-content: space-evenly;
+}
+
+.footer div h3,
+a {
+    padding: 20px 0px;
+}
+
+.right-footer {
+    display: grid;
+    align-items: center;
+    justify-content: space-evenly;
+}
 
 
 /* RESPONSIVE */
@@ -117,7 +234,7 @@ a button{
     /* HEADER */
     .mostrar-menu,
     .esconder-menu {
-        
+
         display: block;
 
     }
@@ -140,7 +257,9 @@ a button{
         display: block;
         padding: 30px;
     }
-    .menu a:hover, .esconder-menu:hover{
+
+    .menu a:hover,
+    .esconder-menu:hover {
         color: #ffffff;
         transition: 0.5s;
     }
@@ -155,11 +274,12 @@ a button{
         top: 31px;
         right: 48px;
     }
-    #check:checked~.menu{
-        display: none;
-        
-    }
-    
 
-    
+    #check:checked~.menu {
+        display: none;
+
+    }
+
+
+
 }
