@@ -1,7 +1,165 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-*{
+/* RESET */
+* {
     margin: 0px;
     padding: 0px;
     font-family: 'Poppins', sans-serif;
+}
+
+/* HEADER */
+header {
+    height: 100px;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+
+}
+
+.logo {
+    color: #29c3e5;
+    text-shadow: 1px 1px 1px  black, 0 0 0.2em #29c3e5;
+}
+
+.menu a {
+    color: #424955;
+    text-decoration: none;
+    padding: 0px 10px;
+    font-weight: bold;
+
+}
+.menu a:hover {
+    transition: 0.3s;
+}
+
+.mostrar-menu,
+.esconder-menu {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: 0.3s;
+}
+
+.mostrar-menu {
+    order: 1;
+}
+
+.menu a:hover,
+.mostrar-menu,
+.esconder-menu {
+    color: #29c3e5;
+    
+}
+
+#check {
+    display: none;
+}
+
+/* MAIN */
+.contenido{
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    justify-content: center;
+    gap: 30px;
+}
+.contenido h1, p, a, img {
+    margin: 0 auto;
+}
+a button{
+    cursor: pointer;
+    padding: 10px 20px;
+    letter-spacing: 4px;
+    background: #29c3e5;
+    color: white;
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+}
+.contenido a button:hover{
+    color: #424955;
+    transition: 0.3s;
+}
+
+/* SECTION */
+#empleados{
+    margin: 50px 0px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 0px 50px;
+    
+}
+.profiles{
+    display: grid;
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+}
+.profiles img{
+    width: 200px;
+    border-radius:100%;
+}
+.profiles a button:hover{
+    color: #424955;
+    transition: 0.3s;
+}
+
+
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    /* HEADER */
+    .mostrar-menu,
+    .esconder-menu {
+        
+        display: block;
+
+    }
+
+    .menu {
+
+        position: fixed;
+        width: 50%;
+        height: 100vh;
+        background: #29c3e5;
+        right: 0;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        transition: 0.8s;
+    }
+
+    .menu a {
+
+        display: block;
+        padding: 30px;
+    }
+    .menu a:hover, .esconder-menu:hover{
+        color: #ffffff;
+        transition: 0.5s;
+    }
+
+    .esconder-menu {
+        position: absolute;
+        font-size: 2em;
+        transition: 0.8s;
+        display: block;
+        color: #424955;
+        position: absolute;
+        top: 31px;
+        right: 48px;
+    }
+    #check:checked~.menu{
+        display: none;
+        
+    }
+    
+
+    
 }
