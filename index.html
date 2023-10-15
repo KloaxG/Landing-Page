@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="WebDevils" href="img/desktop-computer.png">
+    <link rel="icon" type="WebDevils" href="assets/img/desktop-computer.png">
     <script src="https://kit.fontawesome.com/a25d6021c4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
     <title>WebDevils - Home Page</title>
@@ -17,50 +17,91 @@
             &#8801
         </label>
         <input type="checkbox" id="check">
-        <nav class="menu">
-            <a href="#">Inicio</a>
-            <a href="#">Sobre Nosotros</a>
-            <a href="#">Servicios</a>
-            <a href="#">Contacto</a>
-            <label for="check" class="esconder-menu">
-                &#215
-            </label>
-        </nav>
+        <div class="menu">
+            <nav>
+                <a href="#">Inicio</a>
+                <a href="#empleados">Sobre Nosotros</a>
+                <a href="#iconos">Servicios</a>
+                <a href="#contacto">Contacto</a>
+                <label for="check" class="esconder-menu">
+                    &#215
+                </label>
+            </nav>
+        </div>
 
     </header>
     <main>
         <div class="contenido">
 
             <h1>Si puedes imaginarlo, puedes programarlo.</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione similique unde quaerat? </p>
-            <a href="#"><button> Contacto</button></a>
-            <img src="img/media.png" alt="logo-media">
+            <p>Web Devils es una empresa costarricense con servicios de tecnologia y desarrollo de proyectos de software
+                a la medida del usuario. <br> Es nuestro compromiso brindarles la mejor asesoria de la forma mas
+                profesional para poder otorgarles la mejor tecnologia de acuerdo a sus necesidades.
+            </p>
+            <a href="#contacto"><button> Contacto</button></a>
         </div>
-
+        <section class="contenido-imagen">
+            <img src="assets/fondo-contenido.png" alt="logo-media">
+        </section>
+            <div class="about">
+                <div>
+                    <h2>Misión</h2>
+                    <p>Desarrollar experiencias de acuerdo a las solicitudes de nuestros clientes que logren abarcar
+                        cualquier necesidad solicitada. Realizamos trabajos con alta demanda de calidad,
+                        aplicaciones y
+                        soluciones efectivas para cada necesidad de nuestros clientes. Nuestra dedicación laboral
+                        ejerce
+                        de la mano con lo más novedoso en base a tecnología para brindar la mejor experiencia al
+                        usuario.</p>
+                </div>
+                <div>
+                    <h2>Visión</h2>
+                    <p>Anhelamos convertirnos en el mejor equipo de desarrolladores a nivel nacional en el cual
+                        nuestros
+                        clientes confíen y pongan en nosotros sus deseos para hacerlos realidad.
+                        Buscamos la calidad, la satisfacción y ser los líderes a nivel nacional en materia de
+                        desarrollo
+                        web cumpliendo con nuestros códigos de ética y nuestra responsabilidad ante la sociedad.
+                    </p>
+                </div>
+            </div>
+        
         <section id="empleados">
             <div class="profiles">
-                <img src="img/profile1.png" alt="image">
-                Jose Aleman. <br>Coordinador General. <a href="#"><button> Saber más</button></a>
+                <img class="img-profiles" src="assets/Coordinador.png" alt="image">
+                Jose Aleman. <br>Coordinador General. 
+                <a href="https://www.linkedin.com/in/jose-alem%C3%A1n-753a2b155/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
             </div>
             <div class="profiles">
-                <img src="img/profile2.png" alt="image">
-                Gerardo Gómez. <br> Coordinador Desarrollo. <a href="#"><button> Saber más</button></a>
+                <img class="img-profiles" src="assets/Gerardo.png" alt="image">
+                Gerardo Gómez. <br> Coordinador de Desarrollo. 
+                <a href="https://www.linkedin.com/in/gerardo-g%C3%B3mez-543809172/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
             </div>
             <div class="profiles">
-                <img src="img/profile1.png" alt="image">
-                Alejandro Martinez. <br>Coordinador de Soporte II<a href="#"><button> Saber más</button></a>
+                <img class="img-profiles" src="assets/Alejandro.png" alt="image">
+                Alejandro Martinez. <br>Coordinador de Soporte II.
+                <a href="http://linkedin.com/in/jose-alejandro-martínez-campos-b216a3294" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
             </div>
             <div class="profiles">
-                <img src="img/profile2.png" alt="image">
-                Osman Rojas. <br> Coordinador de Soporte I <br> <a href="#"><button> Saber más</button></a>
+                <img class="img-profiles" src="assets/Osman.png" alt="image">
+                Osman Rojas. <br> Coordinador de Soporte I. <br> 
+                <a href="https://www.linkedin.com/in/osman-rojas-a955441b9" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
             </div>
             <div class="profiles">
-                <img src="img/profile1.png" alt="image">
-                Melanny Valverde. <br> Coordiandor de Calidad II <a href="#"><button> Saber más</button></a>
+                <img class="img-profiles" src="assets/profile1.png" alt="image">
+                Melanny Valverde. <br> Coordinador de Calidad II. 
+                <a href="https://www.linkedin.com/in/melany-valverde-1b06b11b7?trk=contact-info" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
             </div>
             <div class="profiles">
-                <img src="img/profile2.png" alt="image">
-                Daniel Fallas. <br> Coordinador de Calidad I <a href="#"><button> Saber más</button></a>
+                <img class="img-profiles" src="assets/profile2.png" alt="image">
+                Daniel Fallas. <br> Coordinador de Calidad I. 
+                <a href="https://www.linkedin.com/in/daniel-fallas-a429841a5/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
             </div>
 
 
@@ -72,22 +113,22 @@
                 <div>
                     <i class="fa-solid fa-truck-fast"></i>
                     <h6>Rápido</h6>
-                    Lorem ipsum dolor sit amet.
+                    <p>Eficacia en entrega.</p>
                 </div>
-                <div>
+                <div id="accesible">
                     <i class="fa-brands fa-internet-explorer"></i>
                     <h6>Accesible</h6>
-                    Lorem ipsum dolor sit amet.
+                    <p>Eficacia en entrega.</p>
                 </div>
                 <div>
                     <i class="fa-solid fa-mobile"></i>
                     <h6>Responsive</h6>
-                    Lorem ipsum dolor sit amet.
+                    <p>Eficacia en entrega.</p>
                 </div>
                 <div id="mobile">
                     <i class="fa-solid fa-book"></i>
                     <h6>Booking</h6>
-                    Lorem ipsum dolor sit amet.
+                    <p>Eficacia en entrega.</p>
                 </div>
             </div>
             <div class="icon-align">
@@ -98,25 +139,28 @@
         </section>
     </main>
 
-    <footer>
+    <footer id="contacto">
         <div class="footer">
             <div class="left-footer">
-                <h2 class="logo"><img src="img/desktop-computer.png" alt="">WebDevils - Software</h2>
+                <img src="assets/desktop-computer.png" alt="">
+                <a href="#"><h2  class="logo">WebDevils Software</h2></a>
+                
+                
             </div>
             <div class="mid-footer">
                 <h3>Compañia</h3>
-                <a href="#">Sobre Nosotros</a>
+                <a href="#empleados">Sobre Nosotros</a>
                 <a href="#">Inicio</a>
             </div>
             <div class="right-footer">
                 <h3>¿Deseas trabajar con nosotros?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
-            <div>
-                <input type="email" name="email" placeholder="Ingresa tu email">
-                <button type="submit">Enviar</button>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <div class="button-right">
+                    <input type="email" name="email" placeholder="Ingresa tu email">
+                    <button type="submit">Enviar</button>
+                </div>
             </div>
-            </div>
-            
+
         </div>
 
 
